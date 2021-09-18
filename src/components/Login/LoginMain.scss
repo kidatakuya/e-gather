@@ -1,0 +1,10 @@
+@import '../common/ress', '../common/_var','../common/_common';
+
+.loginMain{
+    width: 100vw;
+    height: calc(100vh - 6.4rem);
+    background-color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
