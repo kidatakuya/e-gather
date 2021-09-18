@@ -1,4 +1,7 @@
 import './LoginForm.scss';
+import { BrowserRouter as Router,Switch,Route,　Link } from "react-router-dom";
+import Signup from '../Signup/Signup';
+
 
 function LoginForm() {
     return (
@@ -15,7 +18,7 @@ function LoginForm() {
                 </div>
                 <button className="sendBtn loginBtn">ログイン</button>
                 <div className="line"></div>
-                <button className="sendBtn signupBtn">新規登録</button>
+                <Link className="sendBtn signupBtn" to="/Signup">新規登録</Link>
             </form>
             <div className="passLost">
                 <a href="">パスワード忘れた場合</a>

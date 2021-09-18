@@ -1,0 +1,17 @@
+@import '../common/ress', '../common/_var','../common/_common';
+.signupHeader{
+    width: 100vw;
+    // height: 64px;
+    background-color: $mainColor;
+    padding: 1.2rem 2.4rem;
+    .logo{
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        // background-color: $white;
+        // border: 1px solid $white;
+        background-image: url(/img/arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,39 @@
+@import '../common/ress', '../common/_var','../common/_common';
+
+.signupForm{
+    width: 56.2rem;
+    // height: 47rem;
+    color: $white;
+    font-size: 1.4rem;
+    // border: 1px solid $white;
+    h1{
+        text-align: center;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        margin-bottom: 5.6rem;
+    }
+    form{
+        .formItemWarp{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2.4rem;
+            label{
+                width: 100%;
+            }
+            input{
+                width: 100%;
+                border-bottom: 1px solid $white;
+                padding: 1.4rem 2.4rem;
+            }
+            &:nth-of-type(1){
+                margin-top: 0;
+            }
+        }//formItemWarp
+
+        .signupBtn{
+            margin-top: 6.4rem;
+            background-color: $accentColot;
+            color: $white;
+        }
+    }//form
+}
