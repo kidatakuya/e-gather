@@ -1,0 +1,10 @@
+@import '../common/ress', '../common/_var','../common/_common';
+
+.HomeMain{
+    width: 100vw;
+    height: calc(100vh - 6.4rem);
+    display: grid;
+    grid-template-columns: 24rem 1fr;
+}
+
+

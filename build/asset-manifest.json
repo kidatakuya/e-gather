@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.36ad7ba6.chunk.css",
-    "main.js": "./static/js/main.fdd64fe6.chunk.js",
-    "main.js.map": "./static/js/main.fdd64fe6.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.39bff1f4.js",
-    "runtime-main.js.map": "./static/js/runtime-main.39bff1f4.js.map",
-    "static/js/2.76ba5aff.chunk.js": "./static/js/2.76ba5aff.chunk.js",
-    "static/js/2.76ba5aff.chunk.js.map": "./static/js/2.76ba5aff.chunk.js.map",
-    "static/js/3.8ebede68.chunk.js": "./static/js/3.8ebede68.chunk.js",
-    "static/js/3.8ebede68.chunk.js.map": "./static/js/3.8ebede68.chunk.js.map",
+    "main.css": "./static/css/main.36efea6a.chunk.css",
+    "main.js": "./static/js/main.efc1cd2e.chunk.js",
+    "main.js.map": "./static/js/main.efc1cd2e.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.8e873013.js",
+    "runtime-main.js.map": "./static/js/runtime-main.8e873013.js.map",
+    "static/js/2.270952a9.chunk.js": "./static/js/2.270952a9.chunk.js",
+    "static/js/2.270952a9.chunk.js.map": "./static/js/2.270952a9.chunk.js.map",
+    "static/js/3.751953a4.chunk.js": "./static/js/3.751953a4.chunk.js",
+    "static/js/3.751953a4.chunk.js.map": "./static/js/3.751953a4.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.36ad7ba6.chunk.css.map": "./static/css/main.36ad7ba6.chunk.css.map",
-    "static/js/2.76ba5aff.chunk.js.LICENSE.txt": "./static/js/2.76ba5aff.chunk.js.LICENSE.txt",
+    "static/css/main.36efea6a.chunk.css.map": "./static/css/main.36efea6a.chunk.css.map",
+    "static/js/2.270952a9.chunk.js.LICENSE.txt": "./static/js/2.270952a9.chunk.js.LICENSE.txt",
+    "static/media/HomeNav.scss": "./static/media/plus.026ec8fb.svg",
+    "static/media/HomeChatArea.scss": "./static/media/THE-ORAL-CIGARETTES02.4c6390c0.jpeg",
     "static/media/SignupHeader.scss": "./static/media/arrow.c5b8e5f6.svg",
-    "static/media/logo.6ce24c58.svg": "./static/media/logo.6ce24c58.svg"
+    "static/media/logo.6ce24c58.svg": "./static/media/logo.6ce24c58.svg",
+    "static/media/HomeHeader.scss": "./static/media/menu.7c423d35.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.39bff1f4.js",
-    "static/js/2.76ba5aff.chunk.js",
-    "static/css/main.36ad7ba6.chunk.css",
-    "static/js/main.fdd64fe6.chunk.js"
+    "static/js/runtime-main.8e873013.js",
+    "static/js/2.270952a9.chunk.js",
+    "static/css/main.36efea6a.chunk.css",
+    "static/js/main.efc1cd2e.chunk.js"
   ]
 }

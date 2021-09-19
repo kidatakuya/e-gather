@@ -1,0 +1,16 @@
+@import '../common/ress', '../common/_var','../common/_common';
+
+.HomeHeader{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $white;
+    .menu{
+        cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        background-image: url(../../img/menu.svg);
+    }
+}
+
+
+

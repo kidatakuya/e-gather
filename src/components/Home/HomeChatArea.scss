@@ -1,0 +1,81 @@
+@import '../common/ress', '../common/_var','../common/_common';
+
+.homeChatArea{
+    width: 100%;
+    height: calc(100vh - 6.4rem);
+    position: relative;
+    .channelTitle{
+        width: 100%;
+        padding: 1.6rem 4rem;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        background-color: $mainColor;
+        color: $white;
+    }
+    .chatArea{
+        width: 100%;
+        height: calc(100vh - 12.9rem);
+        padding: 1.6rem 0 11rem;
+        overflow: scroll;
+        background-image: url(../../img/THE-ORAL-CIGARETTES02.jpeg);
+        background-color:rgba(255,255,255,0.5);
+        background-blend-mode:lighten;
+        .postWarp{
+            width: 100%;
+            font-size: 1.2rem;
+            color: $white;
+            background-color: rgba($subColor,0.7);
+            padding: 1.6rem;
+            display: grid;
+            grid-template-columns: 10.8rem 1fr;
+            border-bottom: 1px solid $white;
+            .postItem{
+                .post{
+                    font-size: 1.4rem;
+                    padding-top: 12px;
+                }
+            }
+            &:first-child{
+                border-top: 1px solid $white;
+            }
+        }
+        .hostWarp{
+            background-color: rgba($accentColot,0.7);
+        }
+    }
+    .formWarp{
+        position: absolute;
+        bottom: 0;
+        background-color: $mainColor;
+        width: 100%;
+        padding: 2.4rem 3.2rem;
+        display: grid;
+        grid-template-columns: 1fr 10.8rem;
+        .area{
+            // width: 80%;
+            height: auto;
+            border: 1px solid $white;
+            padding: 0.8rem;
+            border-radius: 0.8rem;
+            color: $white;
+            font-size: 1.2rem;
+        }
+        .chatSendBtnWarp{
+            display: flex;
+            // flex-direction: column;
+            margin-top: auto;
+            margin-left: auto;
+            .chatSendBtn{
+                width: 9.2rem;
+                padding: 0.8rem 0;
+                background-color: $accentColot;
+                border-radius: 0.8rem;
+                font-size: 1.4rem;
+                color: $white;
+                font-weight: bold;
+            }
+        }
+
+    }//.formWarp
+
+}

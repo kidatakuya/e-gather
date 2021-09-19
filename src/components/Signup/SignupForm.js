@@ -1,4 +1,5 @@
 import './SignupForm.scss';
+import { HashRouter as Router,Switch,Route,　Link } from "react-router-dom";
 
 function SignupForm() {
     return (
@@ -21,7 +22,8 @@ function SignupForm() {
                     <label>パスワード確認</label>
                     <input type="password" placeholder="8文字以上は半角英数" />
                 </div>
-                <button className="sendBtn signupBtn">新規登録</button>
+                <Link className="sendBtn signupBtn" to="/ArtistSelection">新規登録</Link>
+                {/* <button className="sendBtn signupBtn">新規登録</button> */}
             </form>
         </section>
     
