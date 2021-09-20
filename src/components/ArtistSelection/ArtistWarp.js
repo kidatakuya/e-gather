@@ -56,7 +56,7 @@ function ArtistWarp () {
     };
     
     const items = artistlists.map((artistlist) =>
-        <label for={artistlist.artistId} className="itemWarp">
+        <label htmlFor={artistlist.artistId} className="itemWarp" key={artistlist.artistId}>
             <div className="itemWarp__img"></div>
             <label className="itemWarp__artistName">{artistlist.name}</label>
             <input type="checkbox" id={artistlist.artistId} value={artistlist.artistId} />
