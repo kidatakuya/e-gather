@@ -31,7 +31,7 @@ function PostItems(props) {
     ]
 
     const items = listItems.map((listItem) =>
-        <div className="postWarp" key={listItem.toString()}>
+        <div className="postWarp">
             <p className="contributor">{listItem.name}</p>
             <div className="postItem">
                 <time className="postTime">{listItem.name}</time>

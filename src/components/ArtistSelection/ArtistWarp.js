@@ -3,67 +3,70 @@ import React from "react";
 import { BrowserRouter as Router,Switch,Route,　Link } from "react-router-dom";
 
 
-const list = [
-    {
-        ategory:'ロックバンド',
-        name:'THE ORAL CIGARETTES',
-        image:'http://idolrenaissance.com/images/home/member/marin.jpg'
-    },
-    {
-        ategory:'ロックバンド',
-        name:'THE ORAL CIGARETTES',
-        image:'http://idolrenaissance.com/images/home/member/marin.jpg'
-    },
-    {
-        ategory:'ロックバンド',
-        name:'THE ORAL CIGARETTES',
-        image:'http://idolrenaissance.com/images/home/member/marin.jpg'
-    },
-    {
-        ategory:'ロックバンド',
-        name:'THE ORAL CIGARETTES',
-        image:'http://idolrenaissance.com/images/home/member/marin.jpg'
-    },
-    {
-        ategory:'ロックバンド',
-        name:'THE ORAL CIGARETTES',
-        image:'http://idolrenaissance.com/images/home/member/marin.jpg'
-    },
-    {
-        ategory:'ロックバンド',
-        name:'THE ORAL CIGARETTES',
-        image:'http://idolrenaissance.com/images/home/member/marin.jpg'
-    },
 
-];
 
 
 function ArtistWarp () {
+    const artistlists = [
+        {
+            category:'ロックバンド',
+            name:'THE ORAL CIGARETTES',
+            image:'http://idolrenaissance.com/images/home/member/marin.jpg',
+            artistId:"r-1"
+        },
+        {
+            category:'ロックバンド',
+            name:'THE ORAL CIGARETTES',
+            image:'http://idolrenaissance.com/images/home/member/marin.jpg',
+            artistId:"r-2"
+        },
+        {
+            category:'ロックバンド',
+            name:'THE ORAL CIGARETTES',
+            image:'http://idolrenaissance.com/images/home/member/marin.jpg',
+            artistId:"r-3"
+        },
+        {
+            category:'ロックバンド',
+            name:'THE ORAL CIGARETTES',
+            image:'http://idolrenaissance.com/images/home/member/marin.jpg',
+            artistId:"r-4"
+        },
+        {
+            category:'ロックバンド',
+            name:'THE ORAL CIGARETTES',
+            image:'http://idolrenaissance.com/images/home/member/marin.jpg',
+            artistId:"5"
+        },
+        {
+            category:'ロックバンド',
+            name:'THE ORAL CIGARETTES',
+            image:'http://idolrenaissance.com/images/home/member/marin.jpg',
+            artistId:"r-6"
+        },
     
+    ];
+    let artistWarp = document.getElementsByClassName("artistWarp").length;
+    let artistSelectionWarp = document.getElementById("artistSelectionWarp")
+    let aswWidth = 560 * artistWarp;
+    console.log(aswWidth)
+    const style ={
+        width: aswWidth + "px"
+    };
+    const items = artistlists.map((artistlist) =>
+        <label for={artistlist.artistId} className="itemWarp">
+            <div className="itemWarp__img"></div>
+            <label className="itemWarp__artistName">{artistlist.name}</label>
+            <input type="checkbox" id={artistlist.artistId} value={artistlist.artistId} />
+        </label>
+    );
+
     return (
-        <div className="artistWarp">
-            <h2 className="artistWarp__category">ロックバンド</h2>
-            <div className="artistWarp__list">
-
-                <label for="test01" className="itemWarp">
-                    <div className="itemWarp__img"></div>
-                    <label className="itemWarp__artistName">THE ORAL CIGARETTES</label>
-                    <input type="checkbox" id="test01" />
-                </label>
-
-                <label for="test02" className="itemWarp">
-                    <div className="itemWarp__img"></div>
-                    <label className="itemWarp__artistName">THE ORAL CIGARETTES</label>
-                    <input type="checkbox" id="test02" />
-                </label>
-                <label for="test02" className="itemWarp">
-                    <div className="itemWarp__img"></div>
-                    <label className="itemWarp__artistName">THE ORAL CIGARETTES</label>
-                    <input type="checkbox" id="test02" />
-                </label>
-            </div>
+        <div className="artistWarp__list" style={style}>
+            {items}
         </div>
     )
+    
 };
 
 export default ArtistWarp;
