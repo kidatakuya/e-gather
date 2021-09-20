@@ -55,6 +55,7 @@ function ArtistWarp () {
         width: aswWidth + "px"
     };
     
+    
     const items = artistlists.map((artistlist) =>
         <label for={artistlist.artistId} className="itemWarp">
             <div className="itemWarp__img"></div>
