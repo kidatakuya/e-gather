@@ -1,5 +1,6 @@
 // import './ArtistSelectionForm.scss';
-import React from "react";
+import React,{useEffect} from "react";
+import { Component } from "react";
 import { BrowserRouter as Router,Switch,Route,　Link } from "react-router-dom";
 
 
@@ -49,10 +50,11 @@ function ArtistWarp () {
     let artistWarp = document.getElementsByClassName("artistWarp").length;
     let artistSelectionWarp = document.getElementById("artistSelectionWarp")
     let aswWidth = 560 * artistWarp;
-    console.log(aswWidth)
+    
     const style ={
         width: aswWidth + "px"
     };
+    
     const items = artistlists.map((artistlist) =>
         <label for={artistlist.artistId} className="itemWarp">
             <div className="itemWarp__img"></div>
@@ -60,13 +62,22 @@ function ArtistWarp () {
             <input type="checkbox" id={artistlist.artistId} value={artistlist.artistId} />
         </label>
     );
+    useEffect(() => {
+        let artistWarp = document.getElementsByClassName("artistWarp").length;
+    let artistSelectionWarp = document.getElementById("artistSelectionWarp")
+    let aswWidth = 560 * artistWarp;
+            artistSelectionWarp.style.width=aswWidth + "px"
+        
+    }, [])
 
     return (
-        <div className="artistWarp__list" style={style}>
+        <div className="artistWarp__list">
             {items}
         </div>
     )
     
 };
+
+
 
 export default ArtistWarp;

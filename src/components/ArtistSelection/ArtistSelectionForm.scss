@@ -1,7 +1,7 @@
 @import '../common/ress', '../common/_var','../common/_common';
 
 .artistSelectionForm{
-    width: 80%;
+    width: 75%;
     // height: 47rem;
     color: $white;
     font-size: 1.4rem;
@@ -14,10 +14,10 @@
     }
     form{
         width: 100%;
-        
+        overflow-x: scroll;
         .artistSelectionWarp{
             // width: auto;
-            overflow-x: scroll;
+            // overflow-x: scroll;
             display: flex;
             justify-content: space-between;
             .artistWarp{
@@ -84,19 +84,16 @@
                 
             }//artistWarp
         }
-        
-
-        
-        .startBtn{
-            display: block;
-            margin: 0 auto;
-            margin-top: 6.4rem;
-            background-color: $accentColot;
-            display: flex;
-            align-items: center;  
-        }
     
     }//form
+    .startBtn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 6.4rem;
+        background-color: $accentColot;
+        display: flex;
+        align-items: center;  
+    }
 
     
 }

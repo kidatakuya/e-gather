@@ -15,9 +15,9 @@ function ArtistSelectionForm() {
             <h1>アーティストを選択</h1>
             <form>
                 <ArtistCategoryWarp />
-                <Link className="sendBtn startBtn" to="/Home">E-Gatherを始める</Link>
                 {/* <button className="sendBtn loginBtn">E-Gatherを始める</button> */}  
             </form>
+            <Link className="sendBtn startBtn" to="/Home">E-Gatherを始める</Link>
         </section>
     
     )
