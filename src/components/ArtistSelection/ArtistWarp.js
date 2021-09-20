@@ -64,8 +64,8 @@ function ArtistWarp () {
     );
     useEffect(() => {
         let artistWarp = document.getElementsByClassName("artistWarp").length;
-    let artistSelectionWarp = document.getElementById("artistSelectionWarp")
-    let aswWidth = 560 * artistWarp;
+        let artistSelectionWarp = document.getElementById("artistSelectionWarp")
+        let aswWidth = 560 * artistWarp;
             artistSelectionWarp.style.width=aswWidth + "px"
         
     }, [])
