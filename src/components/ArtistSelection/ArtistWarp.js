@@ -4,9 +4,6 @@ import { Component } from "react";
 import { BrowserRouter as Router,Switch,Route,　Link } from "react-router-dom";
 
 
-
-
-
 function ArtistWarp () {
     const artistlists = [
         {
@@ -55,8 +52,9 @@ function ArtistWarp () {
         width: aswWidth + "px"
     };
     
+
     const items = artistlists.map((artistlist) =>
-        <label for={artistlist.artistId} className="itemWarp">
+        <label htmlFor={artistlist.artistId} className="itemWarp" key={artistlist.artistId}>
             <div className="itemWarp__img"></div>
             <label className="itemWarp__artistName">{artistlist.name}</label>
             <input type="checkbox" id={artistlist.artistId} value={artistlist.artistId} />
@@ -64,10 +62,9 @@ function ArtistWarp () {
     );
     useEffect(() => {
         let artistWarp = document.getElementsByClassName("artistWarp").length;
-    let artistSelectionWarp = document.getElementById("artistSelectionWarp")
-    let aswWidth = 560 * artistWarp;
+        let artistSelectionWarp = document.getElementById("artistSelectionWarp")
+        let aswWidth = 560 * artistWarp;
             artistSelectionWarp.style.width=aswWidth + "px"
-        
     }, [])
 
     return (

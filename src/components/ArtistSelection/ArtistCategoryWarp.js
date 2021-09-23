@@ -12,7 +12,7 @@ function ArtistCategoryWarp (props) {
     ];
     
     const categoryItems = categories.map((category) =>
-        <div className="artistWarp">
+        <div className="artistWarp" key={category}>
             <h2 className="artistWarp__category">{category}</h2>
             <div className="artistWarp__list">
                 <ArtistWarp />
