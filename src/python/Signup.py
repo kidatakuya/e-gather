@@ -1,31 +1,22 @@
-import mysql.connector
-from mysql.connector import errorcode
-import MYSQLdb
+import sqlite3
+
+# データベース作成
+conn = sqlite3.connect('e-gather.db')
+
+# ここに指示を書く
+curs = conn.cursor()
+
+# ここからテーブルを創る
+sql = 'CREATE TABLE E_Gather_general_user(id INTEGER PRIMARY KEY AUTOINCREMENT, user_name STRING, category STRING, address VARCHAR(255), password VARCHAR(500), Artist_list TEXT, account_creation DAYETIME, user_id INTEGER)'
+curs.execute(
+    sql
+    )
+conn.commit()
+
+# データベースを閉じる
+conn.close
 
 
-config = {
-        'user': 'root',
-        'password': 'root',
-        'host': 'localhost',
-        'database':'E-Gather',
-        'charset':'utf8'
-        }
-
-# MySQLへ接続
-# cnx = mysql.connector.connect(**config)
-
-# try〜except文でエラー対処
-try:
-    cnx = mysql.connector.connect(**config)
-
-# ER_ACCESS_DENIED_ERRORは、DBへのアクセスが拒否された場合のエラーコード
-except mysql.connector.Error as err:
-    if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-        print('Cannnot connect database.')
-    else:
-        print(err)
-else:
-    cnx.close()
 
 
-    
+
