@@ -7,9 +7,10 @@ def safty_password(id, password):
     hash.update(id + password)
     return hash.hexdigest()
 
-id = 'E-Gather'
-password = 'test1234'
-
+id = b'E-Gather'
+password = 'test1234@gmail.com'
+password = password.encode()
 print (safty_password(id, password))
+# print(password)
 
 
