@@ -1,4 +1,4 @@
-import logo from './../../logo.svg';
+// import logo from './../../logo.svg';
 import ArtistSelectionHeader from './ArtistSelectionHeader';
 import ArtistSelectionMain from './ArtistSelectionMain';
 

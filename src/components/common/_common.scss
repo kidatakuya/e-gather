@@ -36,7 +36,10 @@ Header{
     .logo{
         width: 4rem;
         height: 4rem;
-        background-color: $white;
+        // background-color: $white;
+        background-image: url(../../img/logo.svg);
+        background-position: center;
+        background-size: contain;
     }
 }
 

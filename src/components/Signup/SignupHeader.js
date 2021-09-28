@@ -6,7 +6,7 @@ function SignupHeader() {
     
     return (
         <header className="signupHeader">
-            <Link className="logo" to="/"></Link>
+            <Link className="back" to="/"></Link>
         </header>
     )
 }
