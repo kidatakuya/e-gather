@@ -31,6 +31,11 @@ conn.commit()
 conn.close
 
 
+# sqlite3 e-gather.db 
 
-
+# テーブル消去
+# curs.execute(
+#     "DROP TABLE E_Gather_THE_ORAL_CIGARETTES_chat"
+#     )
+# conn.commit()
 

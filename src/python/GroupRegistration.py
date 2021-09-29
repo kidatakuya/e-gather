@@ -52,7 +52,7 @@ conn = sqlite3.connect('e-gather.db')
 curs = conn.cursor()
 
 # チャット用アーティストテーブル作成SQL
-tableSql = "CREATE TABLE E_Gather_" + artist_name + "_chat(id INTEGER PRIMARY KEY AUTOINCREMENT, group_name VARCHAR(100), address VARCHAR(255), password VARCHAR(500), account_creation DATETIME )"
+tableSql = "CREATE TABLE E_Gather_" + artist_name + "_chat(id INTEGER PRIMARY KEY AUTOINCREMENT, user_name VARCHAR(50), post_text VARCHAR(500), account_creation DATETIME )"
 
 # SQLデータベースに送信された値があるか
 verificationSql = "SELECT * FROM E_Gather_artist_list WHERE address='" + address + "' AND password='" + changePass + "'"
