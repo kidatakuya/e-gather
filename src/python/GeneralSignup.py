@@ -15,6 +15,7 @@ import sys
 import io
 import sqlite3
 from selenium import webdriver
+import datetime
 
 
 # 日本語を受信時にエラーにならないようにする為に必要。
@@ -29,13 +30,15 @@ id = b'E-Gather'
 
 category = "general"
 
-name = form.getvalue('your_name', '匿名')
-# name = "山田"
-address = form.getvalue('address', '匿名')
-# address = 'test@gmail.com'
-password = form.getvalue('password', '匿名')
-# password = b'test123'
-password = password.encode()
+# name = form.getvalue('your_name', '匿名')
+name = "test"
+# address = form.getvalue('address', '匿名')
+address = 'aaa@gmail.com'
+# password = form.getvalue('password', '匿名')
+password = b'test456'
+# password = password.encode()
+time = datetime.datetime.now()
+time = time.strftime('%Y年%m月%d日 %H時%M分%S秒')
 
 
 # password暗号化関数
@@ -55,7 +58,7 @@ curs = conn.cursor()
 verificationSql = "SELECT * FROM E_Gather_general_users WHERE address='" + address + "' AND password='" + changePass + "'"
 
 # SQLデータベースに送信された値を追加
-additionSql =  "INSERT INTO E_Gather_general_users(user_name, address, password, category) VALUES('"+ name + "','" + address + "','" + changePass + "','" + category + "')"
+additionSql =  "INSERT INTO E_Gather_general_users(user_name, address, password, category, account_creation) VALUES('"+ name + "','" + address + "','" + changePass + "','" + category + "','" + time + "')"
 
 # SQL実行（送信されたデータが登録されているか確認）
 curs.execute(
@@ -77,8 +80,8 @@ if verification == []:
     # 2. 送信したというページに飛ばす命令を書く
 else:
     # 新規登録画面に戻る命令を書く
-    driver = webdriver.Chrome("D:\chromedriver")
-    driver.back()
+    # driver = webdriver.Chrome("D:\chromedriver")
+    # driver.back()
     curs.execute(
         'SELECT * FROM E_Gather_general_users'
         )
