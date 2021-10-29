@@ -1,7 +1,7 @@
 // import './ArtistSelectionForm.scss';
 import React,{useEffect} from "react";
-import { Component } from "react";
-import { BrowserRouter as Router,Switch,Route,　Link } from "react-router-dom";
+// import { Component } from "react";
+// import { BrowserRouter as Router,Switch,Route,　Link } from "react-router-dom";
 
 
 
@@ -48,7 +48,7 @@ function ArtistWarp () {
     
     ];
     let artistWarp = document.getElementsByClassName("artistWarp").length;
-    let artistSelectionWarp = document.getElementById("artistSelectionWarp")
+    // let artistSelectionWarp = document.getElementById("artistSelectionWarp")
     let aswWidth = 560 * artistWarp;
     
     const style ={

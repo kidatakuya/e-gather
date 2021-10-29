@@ -18,13 +18,15 @@
         padding: 1.6rem 0 11rem;
         overflow: scroll;
         background-image: url(../../img/THE-ORAL-CIGARETTES02.jpeg);
+        background-position: center;
+        background-size: cover;
         background-color:rgba(255,255,255,0.5);
         background-blend-mode:lighten;
         .postWarp{
             width: 100%;
             font-size: 1.2rem;
             color: $white;
-            background-color: rgba($subColor,0.7);
+            background-color: rgba($subColor,0.8);
             padding: 1.6rem;
             display: grid;
             grid-template-columns: 10.8rem 1fr;

@@ -22,8 +22,8 @@ function ChannelWarp(props) {
         },
     ];
 
-    const artists = artistLists.map((artist) =>
-        <li className="channelWarp__channel">
+    const artists = artistLists.map((artist, index) =>
+        <li className="channelWarp__channel" key={index}>
             <div className="img"></div>
             <p className="channelName">{artist.name}</p>
         </li>

@@ -1,0 +1,44 @@
+@import '../common/ress', '../common/_var','../common/_common';
+
+
+.MenuWarp{
+    transition: .5s;
+    width: 27rem;
+    height: 100vh;
+    background-color: $subColor;
+    position: fixed;
+    top: 0;
+    right: -27rem;
+    border-left: 1px $white solid;
+    color: $white;
+    padding: 12.6rem 3rem 0;
+    .close{
+        width: 4rem;
+        height: 4rem;
+        background-image: url(../../img/close.svg);
+        background-position: center;
+        position: absolute;
+        right: 1.6rem;
+        top: 1.6rem;
+        cursor: pointer;
+    }
+    .itemWarp{
+        .item{
+            width: 100%;
+            border-top: 1px $white solid;
+            border-bottom: 1px $white solid;
+            padding: 1.6rem 0;
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 2.4rem;
+            cursor: pointer;
+        }
+        .logout{
+            border: none;
+            background-color: $accentColot;
+            border-radius: 0.8rem;
+        }
+    }
+}
+
+

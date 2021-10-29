@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import {HashRouter as Router,Switch,Route,Link} from "react-router-dom";
+import {HashRouter as Router,Switch,Route} from "react-router-dom";
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import ArtistSelection from './components/ArtistSelection/ArtistSelection';
