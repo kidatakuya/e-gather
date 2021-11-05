@@ -5,13 +5,13 @@ import menuClick from './HomeAnimation';
 
 function HomeHeader(props) {
     
-    const age = props.age;
+    const menuFlag = props.menuFlag;
     
     return (
         <header className="HomeHeader">
             <div className="logo"></div>
             <div className="menu" id="menu-js" onClick={() => {
-                menuClick(age);
+                menuClick(menuFlag);
             }}></div>
         </header>
     )

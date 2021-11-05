@@ -12,9 +12,10 @@
     margin: auto;
     z-index: 200;
     color: $white;
-    width: 70vw;
-    height: 70vh;
+    width: 80rem;
+    height: 60rem;
     background-color: $mainColor;
+    display: none;
     .title{
         margin-bottom: 5.6rem;
         text-align: center;

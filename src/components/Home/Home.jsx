@@ -1,4 +1,4 @@
-// import logo from './../../logo.svg';
+
 import HomeHeader from './HomeHeader';
 import HomeMain from './HomeMain';
 import HomeMenuWarp from './HomeMenuWarp';
@@ -11,11 +11,10 @@ function Home() {
 
     return (
         <div>
-            <HomeHeader age="0"/>
+            <HomeHeader menuFlag={true}/>
             <HomeMain />
-            <HomeMenuWarp age="1"/>
-            <HomeInquiry />
-
+            <HomeMenuWarp menuFlag={false} inquiryFlag={true}/>
+            <HomeInquiry inquiryFlag={false} />
         </div>
     );
 }

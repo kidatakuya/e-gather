@@ -16,7 +16,7 @@ function LoginForm() {
                     <label>パスワード</label>
                     <input type="password" placeholder="8文字以上は半角英数" />
                 </div>
-                <button className="sendBtn loginBtn">ログイン</button>
+                <Link className="sendBtn loginBtn" to="/Home">ログイン</Link>
                 <div className="line"></div>
                 <Link className="sendBtn signupBtn" to="/Signup">新規登録</Link>
             </form>
